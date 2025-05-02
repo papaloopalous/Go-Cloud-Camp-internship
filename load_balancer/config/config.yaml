@@ -1,0 +1,10 @@
+server:
+  address: ":8080"
+
+backends:
+  - "http://localhost:9001"
+  - "http://localhost:9002"
+  - "http://localhost:9003"
+
+interval:
+  "5"

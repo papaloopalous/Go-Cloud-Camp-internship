@@ -1,0 +1,204 @@
+{"level":"info","timestamp":"2025-05-02T20:53:17.634+0300","caller":"cmd/main.go:54","msg":"Load Balancer is on","port":":8080"}
+{"level":"info","timestamp":"2025-05-02T20:53:23.589+0300","caller":"cmd/main.go:62","msg":"Shutting down gracefully..."}
+{"level":"info","timestamp":"2025-05-02T20:53:23.589+0300","caller":"cmd/main.go:67","msg":"Server gracefully stopped"}
+{"level":"info","timestamp":"2025-05-02T21:34:12.172+0300","caller":"cmd/main.go:54","msg":"load Balancer is on","Port":":8080"}
+{"level":"info","timestamp":"2025-05-02T21:34:13.176+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:13.176+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:13.177+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:14.174+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:14.174+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:14.174+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:15.174+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:15.174+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:15.174+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:16.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:16.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:16.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:17.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:17.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:17.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:18.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:18.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:18.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:19.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:19.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:19.173+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:19.547+0300","caller":"cmd/main.go:62","msg":"shutting down gracefully"}
+{"level":"info","timestamp":"2025-05-02T21:34:19.547+0300","caller":"balancer/health.go:19","msg":"shutting down health checks"}
+{"level":"info","timestamp":"2025-05-02T21:34:19.547+0300","caller":"cmd/main.go:67","msg":"server gracefully stopped"}
+{"level":"info","timestamp":"2025-05-02T21:34:32.134+0300","caller":"cmd/main.go:54","msg":"load Balancer is on","Port":":8080"}
+{"level":"info","timestamp":"2025-05-02T21:34:42.148+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:42.148+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:34:42.148+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:52.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:34:52.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:34:52.144+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:02.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:35:02.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:35:02.144+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:12.142+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:35:12.142+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:35:12.143+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:22.144+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:35:22.144+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:35:22.144+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:32.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:35:32.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:35:32.144+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:42.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:35:42.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:35:42.144+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:52.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:35:52.143+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:35:52.143+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:35:55.674+0300","caller":"cmd/main.go:62","msg":"shutting down gracefully"}
+{"level":"info","timestamp":"2025-05-02T21:35:55.674+0300","caller":"balancer/health.go:19","msg":"shutting down health checks"}
+{"level":"info","timestamp":"2025-05-02T21:35:55.675+0300","caller":"cmd/main.go:67","msg":"server gracefully stopped"}
+{"level":"info","timestamp":"2025-05-02T21:36:25.860+0300","caller":"cmd/main.go:54","msg":"load Balancer is on","Port":":8080"}
+{"level":"info","timestamp":"2025-05-02T21:36:30.869+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:36:30.869+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:36:30.869+0300","caller":"balancer/health.go:32","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:36:34.033+0300","caller":"cmd/main.go:62","msg":"shutting down gracefully"}
+{"level":"info","timestamp":"2025-05-02T21:36:34.033+0300","caller":"balancer/health.go:19","msg":"shutting down health checks"}
+{"level":"info","timestamp":"2025-05-02T21:36:34.033+0300","caller":"cmd/main.go:67","msg":"server gracefully stopped"}
+{"level":"info","timestamp":"2025-05-02T21:37:02.678+0300","caller":"cmd/main.go:54","msg":"load Balancer is on","Port":":8080"}
+{"level":"info","timestamp":"2025-05-02T21:37:07.685+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:07.686+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:07.686+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:12.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:12.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:12.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:17.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:17.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:17.679+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:22.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:22.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:22.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:27.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:27.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:27.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:32.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:32.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:32.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:37.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:37.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:37.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:42.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:42.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:42.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:47.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:47.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:47.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:52.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:52.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:52.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:37:56.310+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:37:56.310+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:57.679+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:37:57.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:37:57.680+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:02.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:02.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:02.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:02.894+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:02.896+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:03.494+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:03.494+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:03.975+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:03.975+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:04.404+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:04.404+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:04.808+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:04.808+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:05.238+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:05.238+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:05.666+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:05.667+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:06.096+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:06.096+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:06.552+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:06.552+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.007+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.007+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.468+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.468+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.678+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.679+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.918+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:07.919+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:09.582+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:09.583+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:10.089+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:10.090+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:10.544+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:10.545+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:11.073+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:11.073+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:11.558+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:11.559+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:11.987+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:11.987+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:12.516+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:12.517+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:12.679+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:12.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:12.680+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:16.307+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9001","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:16.307+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:17.678+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:17.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:17.679+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:22.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:22.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:22.680+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:23.410+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9002","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:27.412+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:27.678+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:27.678+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:27.678+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:32.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:32.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:32.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:37.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:37.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:37.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:42.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:42.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:42.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:47.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:47.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:47.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:52.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:52.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:52.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:38:56.777+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9002","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:38:57.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:38:57.679+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:38:57.680+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:00.777+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:00.845+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9002","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:39:02.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:39:02.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:39:02.680+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:04.846+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:04.913+0300","caller":"balancer/balancer.go:65","msg":"forwarding to","URL":"http://localhost:9002","active":"1"}
+{"level":"info","timestamp":"2025-05-02T21:39:07.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:39:07.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:39:07.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:08.915+0300","caller":"balancer/balancer.go:77","msg":"successfully proxied to","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:12.680+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:12.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:39:12.680+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:39:17.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:39:17.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:39:17.682+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:22.681+0300","caller":"balancer/health.go:32","msg":"server is reachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:22.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:39:22.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:39:27.681+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9003"}
+{"level":"info","timestamp":"2025-05-02T21:39:27.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9002"}
+{"level":"info","timestamp":"2025-05-02T21:39:27.682+0300","caller":"balancer/health.go:29","msg":"server is unreachable","URL":"http://localhost:9001"}
+{"level":"info","timestamp":"2025-05-02T21:39:29.183+0300","caller":"cmd/main.go:62","msg":"shutting down gracefully"}
+{"level":"info","timestamp":"2025-05-02T21:39:29.183+0300","caller":"balancer/health.go:19","msg":"shutting down health checks"}
+{"level":"info","timestamp":"2025-05-02T21:39:29.183+0300","caller":"cmd/main.go:67","msg":"server gracefully stopped"}
