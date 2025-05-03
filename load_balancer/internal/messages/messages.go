@@ -12,6 +12,7 @@ const (
 	ErrResponse           = "failed to write a response"
 	ErrInvalidBackendURL  = "invalid backend url"
 	ErrReadConfig         = "unable to read config file: %v"
+	ErrProxy              = "proxy error"
 )
 
 // info messages

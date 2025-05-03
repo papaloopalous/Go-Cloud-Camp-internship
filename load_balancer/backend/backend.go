@@ -3,6 +3,7 @@ package backend
 import (
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
+	"net/http"
 	"net/http/httputil"
 	"net/url"
 	"sync"
@@ -66,9 +67,16 @@ func NewBackend(rawurl string) *backend {
 		logger.Log.Error(messages.ErrInvalidBackendURL, zap.String(messages.URL, rawurl))
 	}
 
+	proxy := httputil.NewSingleHostReverseProxy(parsedURL)
+
+	// переопределение обработчика ошибок прокси
+	proxy.ErrorHandler = func(w http.ResponseWriter, r *http.Request, err error) {
+		logger.Log.Error(messages.ErrProxy, zap.String(messages.URL, rawurl), zap.Error(err))
+	}
+
 	return &backend{
 		url:          parsedURL,
-		reverseProxy: httputil.NewSingleHostReverseProxy(parsedURL),
+		reverseProxy: proxy,
 		alive:        true,
 	}
 }

@@ -6,15 +6,17 @@ import (
 	"load_balancer/internal/messages"
 	"load_balancer/internal/response"
 	"load_balancer/internal/util"
-	"math"
+	"load_balancer/strategy"
 	"net/http"
 	"net/http/httptest"
 	"strconv"
+	"sync"
 
 	"go.uber.org/zap"
 )
 
 type loadBalancer struct {
+	mu      sync.RWMutex
 	servers []backend.BackendIface
 }
 
@@ -25,27 +27,27 @@ func NewBalancer() *loadBalancer {
 }
 
 func (lb *loadBalancer) AddBack(server backend.BackendIface) {
+	lb.mu.RLock()
+	defer lb.mu.RUnlock()
 	lb.servers = append(lb.servers, server)
+}
+
+func (lb *loadBalancer) GetServers() []backend.BackendIface {
+	lb.mu.RLock()
+	defer lb.mu.RUnlock()
+	return lb.servers
 }
 
 // выбор сервера для обработки запроса
 func (lb *loadBalancer) getNextBack() backend.BackendIface {
-	var selected backend.BackendIface
-	minConns := math.MaxInt64
-
-	for _, back := range lb.servers {
-		conns := back.GetConns()
-		if back.IsAlive() && conns < int64(minConns) {
-			minConns = int(conns)
-			selected = back
-		}
-	}
-
-	return selected
+	return strategy.GetLeastConns(lb)
 }
 
 func (lb *loadBalancer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	lb.mu.RLock()
 	var maxRetries = len(lb.servers)
+	lb.mu.RUnlock()
+
 	var attempt int
 	var reused bool
 
