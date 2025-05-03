@@ -8,3 +8,15 @@ backends:
 
 interval:
   "5"
+
+db:
+  address: "localhost:6379"
+
+maxTokens:
+  "25"
+
+rate:
+  "10"
+
+salt:
+ "secret key"

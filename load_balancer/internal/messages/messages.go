@@ -13,6 +13,15 @@ const (
 	ErrInvalidBackendURL  = "invalid backend url"
 	ErrReadConfig         = "unable to read config file: %v"
 	ErrProxy              = "proxy error"
+	ErrAddToken           = "failed to add a token"
+	ErrUpdate             = "failed to update due to concurrent modification of IP %s: %v"
+	ErrFind               = "failed to find due to concurrent modification of IP %s: %v"
+	ErrInsert             = "failed to insert due to concurrent modification of IP %s: %v"
+	ErrNoData             = "no data found for IP %s"
+	ErrLimiter            = "rate limiter failed to procees the request"
+	ErrTooManyRequests    = "rate limit exceeded"
+	ErrNoAvailableToken   = "no tokens are available"
+	ErrGetKeys            = "failed to list Redis keys"
 )
 
 // info messages
@@ -26,6 +35,10 @@ const (
 	InfoShutdownHealth     = "shutting down health checks"
 	InfoUnreachable        = "server is unreachable"
 	InfoReachable          = "server is reachable"
+	InfoAddedToken         = "added a token"
+	InfoTickersStopped     = "all tickers stopped due to server shutdown"
+	InfoUserCreated        = "user created"
+	InfoAccessGranted      = "access granted"
 )
 
 // misc
@@ -35,4 +48,6 @@ const (
 	Number = "Number"
 	Code   = "Code"
 	Status = "Status"
+	IP     = "IP"
+	Tokens = "tokens"
 )

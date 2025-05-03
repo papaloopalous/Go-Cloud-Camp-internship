@@ -30,5 +30,5 @@ func Init() {
 
 	core := zapcore.NewTee(consoleCore, fileCore)
 
-	Log = zap.New(core, zap.AddCaller(), zap.AddStacktrace(zapcore.ErrorLevel))
+	Log = zap.New(core, zap.AddCaller())
 }

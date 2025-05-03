@@ -5,8 +5,11 @@ import (
 	"load_balancer/backend"
 	"load_balancer/balancer"
 	configloading "load_balancer/config_loading"
+	"load_balancer/internal/handler"
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
+	"load_balancer/internal/middleware"
+	ratelimiter "load_balancer/rate_limiter"
 	"net/http"
 	"os"
 	"os/signal"
@@ -27,7 +30,17 @@ func init() {
 
 func main() {
 	defer logger.Log.Sync()
-	serverAddr, backendAddr, interval := configloading.SetParams()
+	serverAddr, backendAddr, interval, dbAddr, salt, defaultMaxTokens, defaultRate := configloading.SetParams()
+
+	rl := ratelimiter.NewBucket(dbAddr, defaultMaxTokens, defaultRate)
+	middlewareHandler := &middleware.MiddlewareHandler{
+		Limiter: rl,
+		Salt:    salt,
+	}
+
+	setupHandler := &handler.LimiterHandler{
+		Limiter: rl,
+	}
 
 	lb := balancer.NewBalancer()
 	for _, addr := range backendAddr {
@@ -41,13 +54,21 @@ func main() {
 	defer ticker.Stop()
 
 	go lb.HealthCheck(ctx, ticker.C)
+	go middlewareHandler.Limiter.StopAllTickers(ctx)
 
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, syscall.SIGINT, syscall.SIGTERM)
 
+	mux := http.NewServeMux()
+
+	mux.Handle("/", middlewareHandler.LimitMiddleware(lb))
+
+	mux.HandleFunc("/set_rate", setupHandler.SetRateHandler())
+	mux.HandleFunc("/set_max", setupHandler.SetMaxHandler())
+
 	server := &http.Server{
 		Addr:    serverAddr,
-		Handler: lb,
+		Handler: mux,
 	}
 
 	go func() {
