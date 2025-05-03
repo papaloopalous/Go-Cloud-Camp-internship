@@ -3,6 +3,7 @@ package backend
 import (
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
+	"load_balancer/internal/response"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
@@ -72,6 +73,7 @@ func NewBackend(rawurl string) *backend {
 	// переопределение обработчика ошибок прокси
 	proxy.ErrorHandler = func(w http.ResponseWriter, r *http.Request, err error) {
 		logger.Log.Error(messages.ErrProxy, zap.String(messages.URL, rawurl), zap.Error(err))
+		response.WriteAPIResponse(w, http.StatusBadGateway, false, messages.ErrProxy, nil)
 	}
 
 	return &backend{
