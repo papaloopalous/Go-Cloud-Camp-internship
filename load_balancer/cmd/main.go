@@ -2,6 +2,12 @@ package main
 
 import (
 	"context"
+	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+	"time"
+
 	"load_balancer/backend"
 	"load_balancer/balancer"
 	configloading "load_balancer/config_loading"
@@ -10,15 +16,11 @@ import (
 	"load_balancer/internal/messages"
 	"load_balancer/internal/middleware"
 	ratelimiter "load_balancer/rate_limiter"
-	"net/http"
-	"os"
-	"os/signal"
-	"syscall"
-	"time"
 
 	"go.uber.org/zap"
 )
 
+// инициализация логгера, загрузка параметров из конфига
 func init() {
 	logger.Init()
 
@@ -47,6 +49,7 @@ func main() {
 		lb.AddBack(backend.NewBackend(addr))
 	}
 
+	// контекст для завершения работы тикеров
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 

@@ -2,6 +2,7 @@ package configloading
 
 import (
 	"fmt"
+
 	"load_balancer/internal/messages"
 
 	"github.com/spf13/viper"

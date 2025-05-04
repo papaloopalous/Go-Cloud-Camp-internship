@@ -1,13 +1,14 @@
 package middleware
 
 import (
+	"net/http"
+	"strconv"
+
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
 	"load_balancer/internal/response"
 	"load_balancer/internal/util"
 	ratelimiter "load_balancer/rate_limiter"
-	"net/http"
-	"strconv"
 
 	"go.uber.org/zap"
 )
@@ -17,6 +18,7 @@ type MiddlewareHandler struct {
 	Salt    string
 }
 
+// функция ограничителя кол-ва запросов
 func (mh *MiddlewareHandler) LimitMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		ip := util.GetClientIP(r)

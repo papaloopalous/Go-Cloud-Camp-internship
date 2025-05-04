@@ -2,15 +2,17 @@ package balancer
 
 import (
 	"context"
+	"net/http"
+	"time"
+
 	"load_balancer/backend"
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
-	"net/http"
-	"time"
 
 	"go.uber.org/zap"
 )
 
+// периодическая проверка доступности серверов обработки запросов
 func (lb *loadBalancer) HealthCheck(ctx context.Context, tick <-chan time.Time) {
 	for {
 		select {

@@ -1,14 +1,15 @@
 package backend
 
 import (
-	"load_balancer/internal/logger"
-	"load_balancer/internal/messages"
-	"load_balancer/internal/response"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
 	"sync"
 	"sync/atomic"
+
+	"load_balancer/internal/logger"
+	"load_balancer/internal/messages"
+	"load_balancer/internal/response"
 
 	"go.uber.org/zap"
 )

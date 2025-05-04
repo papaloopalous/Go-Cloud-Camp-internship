@@ -1,9 +1,15 @@
 package handler
 
 import (
-	ratelimiter "load_balancer/rate_limiter"
 	"net/http"
 	"strconv"
+
+	"load_balancer/internal/logger"
+	"load_balancer/internal/messages"
+	"load_balancer/internal/response"
+	ratelimiter "load_balancer/rate_limiter"
+
+	"go.uber.org/zap"
 )
 
 type LimiterHandler struct {
@@ -17,23 +23,26 @@ func (lh *LimiterHandler) SetRateHandler() http.HandlerFunc {
 		valStr := r.URL.Query().Get("value")
 
 		if ip == "" || valStr == "" {
-			http.Error(w, "Missing 'ip' or 'value' parameter", http.StatusBadRequest)
+			logger.Log.Info(messages.ErrNoIPORVal)
+			response.WriteAPIResponse(w, http.StatusBadRequest, false, messages.ErrNoIPORVal, nil)
 			return
 		}
 
 		rate, err := strconv.Atoi(valStr)
 		if err != nil {
-			http.Error(w, "Invalid 'value' parameter", http.StatusBadRequest)
+			logger.Log.Info(messages.ErrBadValue, zap.Error(err))
+			response.WriteAPIResponse(w, http.StatusBadRequest, false, messages.ErrBadValue, nil)
 			return
 		}
 
 		if err := lh.Limiter.SetRate(ip, rate); err != nil {
-			http.Error(w, "Failed to set rate: "+err.Error(), http.StatusInternalServerError)
+			logger.Log.Info(messages.ErrSetRate, zap.Error(err))
+			response.WriteAPIResponse(w, http.StatusInternalServerError, false, messages.ErrSetRate, nil)
 			return
 		}
 
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("Rate updated"))
+		logger.Log.Info(messages.InfoRateUPD, zap.String(messages.IP, ip))
+		response.WriteAPIResponse(w, http.StatusOK, true, messages.InfoRateUPD, nil)
 	}
 }
 
@@ -44,22 +53,26 @@ func (lh *LimiterHandler) SetMaxHandler() http.HandlerFunc {
 		valStr := r.URL.Query().Get("value")
 
 		if ip == "" || valStr == "" {
-			http.Error(w, "Missing 'ip' or 'value' parameter", http.StatusBadRequest)
+			logger.Log.Info(messages.ErrNoIPORVal)
+			response.WriteAPIResponse(w, http.StatusBadRequest, false, messages.ErrNoIPORVal, nil)
 			return
 		}
 
 		max, err := strconv.Atoi(valStr)
 		if err != nil {
-			http.Error(w, "Invalid 'value' parameter", http.StatusBadRequest)
+			logger.Log.Info(messages.ErrBadValue, zap.Error(err))
+			response.WriteAPIResponse(w, http.StatusBadRequest, false, messages.ErrBadValue, nil)
 			return
 		}
 
 		if err := lh.Limiter.SetMaxTokens(ip, max); err != nil {
-			http.Error(w, "Failed to set max tokens: "+err.Error(), http.StatusInternalServerError)
+			logger.Log.Info(messages.ErrSetMax, zap.Error(err))
+			response.WriteAPIResponse(w, http.StatusInternalServerError, false, messages.ErrSetMax, nil)
 			return
 		}
 
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("Max tokens updated"))
+		logger.Log.Info(messages.InfoMaxUPD, zap.String(messages.IP, ip))
+		response.WriteAPIResponse(w, http.StatusOK, true, messages.InfoMaxUPD, nil)
 	}
 }

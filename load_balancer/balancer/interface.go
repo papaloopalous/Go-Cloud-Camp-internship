@@ -2,9 +2,10 @@ package balancer
 
 import (
 	"context"
-	"load_balancer/backend"
 	"net/http"
 	"time"
+
+	"load_balancer/backend"
 )
 
 type BalancerIface interface {

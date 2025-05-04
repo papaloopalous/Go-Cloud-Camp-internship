@@ -2,13 +2,15 @@ package response
 
 import (
 	"encoding/json"
+	"net/http"
+
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
-	"net/http"
 
 	"go.uber.org/zap"
 )
 
+// структура ответа сервера
 type APIResponse struct {
 	Success bool        `json:"success"`
 	Code    int         `json:"code"`

@@ -1,8 +1,9 @@
 package strategy
 
 import (
-	"load_balancer/backend"
 	"math"
+
+	"load_balancer/backend"
 )
 
 type ServerSlice interface {

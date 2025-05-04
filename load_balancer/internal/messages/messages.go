@@ -22,6 +22,10 @@ const (
 	ErrTooManyRequests    = "rate limit exceeded"
 	ErrNoAvailableToken   = "no tokens are available"
 	ErrGetKeys            = "failed to list Redis keys"
+	ErrNoIPORVal          = "missing 'ip' or 'value' parameter"
+	ErrBadValue           = "invalid 'value' parameter"
+	ErrSetRate            = "failed to set rate"
+	ErrSetMax             = "failed to set max tokens"
 )
 
 // info messages
@@ -39,6 +43,8 @@ const (
 	InfoTickersStopped     = "all tickers stopped due to server shutdown"
 	InfoUserCreated        = "user created"
 	InfoAccessGranted      = "access granted"
+	InfoRateUPD            = "rate updated"
+	InfoMaxUPD             = "max tokens updated"
 )
 
 // misc

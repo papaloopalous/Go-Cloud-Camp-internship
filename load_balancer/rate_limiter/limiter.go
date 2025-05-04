@@ -3,10 +3,11 @@ package ratelimiter
 import (
 	"context"
 	"errors"
-	"load_balancer/internal/logger"
-	"load_balancer/internal/messages"
 	"sync"
 	"time"
+
+	"load_balancer/internal/logger"
+	"load_balancer/internal/messages"
 
 	"github.com/go-redis/redis"
 	"go.uber.org/zap"

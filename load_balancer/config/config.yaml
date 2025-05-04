@@ -13,10 +13,10 @@ db:
   address: "localhost:6379"
 
 maxTokens:
-  "25"
+  "5"
 
 rate:
-  "10"
+  "1"
 
 salt:
  "secret key"

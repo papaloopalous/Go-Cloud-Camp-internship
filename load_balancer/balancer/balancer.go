@@ -1,16 +1,17 @@
 package balancer
 
 import (
+	"net/http"
+	"net/http/httptest"
+	"strconv"
+	"sync"
+
 	"load_balancer/backend"
 	"load_balancer/internal/logger"
 	"load_balancer/internal/messages"
 	"load_balancer/internal/response"
 	"load_balancer/internal/util"
 	"load_balancer/strategy"
-	"net/http"
-	"net/http/httptest"
-	"strconv"
-	"sync"
 
 	"go.uber.org/zap"
 )
